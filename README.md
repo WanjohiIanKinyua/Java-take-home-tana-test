@@ -135,7 +135,6 @@ public class Test_Question3 {
         System.out.println("Expected: 0 | Got: " + Question3_ArrayReduction.canMakeZero(a3));
     }
 }
-
 ```
 
 ### Test File for Question 4
