@@ -114,8 +114,11 @@ public class Test_Question2 {
     }
 }
 
-Test_Question3.java
+### Test File for Question 3
 
+**File:** `Test_Question3.java`
+
+```java
 public class Test_Question3 {
     public static void main(String[] args) {
         int[] a1 = {1,2,3};
@@ -127,6 +130,7 @@ public class Test_Question3 {
         System.out.println("Expected: 0 | Got: " + Question3_ArrayReduction.canMakeZero(a3));
     }
 }
+
 
 Test_Question4.java
 
