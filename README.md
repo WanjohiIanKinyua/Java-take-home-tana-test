@@ -1,4 +1,5 @@
 Take-Home Tana Test – Java Solutions
+
 Environment
 •	Programming Language: Java 21 (OpenJDK)
 •	Compiler: javac 21.0.7
@@ -18,45 +19,55 @@ take-home-tana-test
 How to Run
 1.	Open a terminal in the project directory.
 2.	Compile the Java file:
+
 javac Question1_GetLongestString.java
+
 3.	Run the program:
+
 java Question1_GetLongestString
+
 4.	Repeat steps 2 and 3 for each question file.
 
 Solutions Summary
 Question 1 – Longest Valid String
 •	Approach: Checks each string to ensure no consecutive identical characters and only valid characters are allowed. Returns the longest valid string.
 •	Run:
+
 javac Question1_GetLongestString.java
 java Question1_GetLongestString
 
 Question 2 – Unique Sum Combinations
 •	Approach: Uses backtracking to count all unique combinations of numbers in the array that sum to the target result.
 •	Run:
+
 javac Question2_UniqueSumCombinations.java
 java Question2_UniqueSumCombinations
 
 Question 3 – Array Reduction
 •	Approach: Checks if each element (from the second onward) is divisible by its previous element. If so, the array can be reduced to zeros except the first element.
 •	Run:
+
 javac Question3_ArrayReduction.java
 java Question3_ArrayReduction
 
 Question 4 – First Unique Product
 •	Approach: Uses a LinkedHashMap to maintain insertion order while counting occurrences. Returns the first product appearing only once.
 •	Run:
+
 javac Question4_FirstUniqueProduct.java
 java Question4_FirstUniqueProduct
 
 Question 5 – Closest Minimum Distance
 •	Approach: Finds all indices of the minimum value and computes the smallest gap between consecutive occurrences.
 •	Run:
+
 javac Question5_ClosestMinimumDistance.java
 java Question5_ClosestMinimumDistance
 
 Question 6 – Top Three Common Words
 •	Approach: Splits the sentence into words, counts frequency using a HashMap, sorts by frequency and then alphabetically, returns top 3 in ascending order.
 •	Run:
+
 javac Question6_TopThreeCommonWords.java
 java Question6_TopThreeCommonWords
 
@@ -64,13 +75,14 @@ java Question6_TopThreeCommonWords
 Question 7 – Rotate Linked List
 •	Approach: Calculates list length, makes it circular, adjusts rotation steps, and breaks the circle at the new tail.
 •	Run:
+
 javac Question7_RotateList.java
 java Question7_RotateList
 
 Test Files
 Test_Question1.java
-import java.util.*;
 
+import java.util.*;
 public class Test_Question1 {
     public static void main(String[] args) {
         List<Character> validChars = Arrays.asList('A','B','C','D');
@@ -88,8 +100,8 @@ public class Test_Question1 {
 }
 
 Test_Question2.java
-import java.util.*;
 
+import java.util.*;
 public class Test_Question2 {
     public static void main(String[] args) {
         int[] arr1 = {1,2,3,4,5};
@@ -103,6 +115,7 @@ public class Test_Question2 {
 }
 
 Test_Question3.java
+
 public class Test_Question3 {
     public static void main(String[] args) {
         int[] a1 = {1,2,3};
@@ -116,6 +129,7 @@ public class Test_Question3 {
 }
 
 Test_Question4.java
+
 public class Test_Question4 {
     public static void main(String[] args) {
         String[] products = {"Apple","Computer","Apple","Bag"};
@@ -129,6 +143,7 @@ public class Test_Question4 {
 }
 
 Test_Question5.java
+
 public class Test_Question5 {
     public static void main(String[] args) {
         int[] arr = {1,2,3,1,4,5,2};
@@ -138,8 +153,8 @@ public class Test_Question5 {
 }
 
 Test_Question6.java
-import java.util.*;
 
+import java.util.*;
 public class Test_Question6 {
     public static void main(String[] args) {
         String sentence = "hi there care to discuss algorithm basis or how to solve algorithm or";
@@ -149,6 +164,7 @@ public class Test_Question6 {
 }
 
 Test_Question7.java
+
 public class Test_Question7 {
     public static void main(String[] args) {
         Node head = new Node("ID_A01");
